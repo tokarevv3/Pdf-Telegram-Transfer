@@ -12,6 +12,19 @@
         jar
     </packaging>
 
+    <name>Pdf-Telegram-Transfer</name>
+    <description>Transfer files from folder to Telegram dialog</description>
+    <url>https://github.com/tokarevv3/Pdf-Telegram-Transfer</url>
+
+    <developers>
+        <developer>
+            <name>Tokarev Vadim</name>
+            <email>tokarev.0603@mail.ru</email>
+            <url>https://github.com/tokarevv3</url>
+            <timezone>UTC+3</timezone>
+        </developer>
+    </developers>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -32,5 +45,46 @@
         </dependency>
 
     </dependencies>
+    <build>
+        <finalName>Pdf-Telegram-Transfer</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>Main</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id> <!-- this is used for inheritance merges -->
+                        <phase>package</phase> <!-- bind to the packaging phase -->
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -49,7 +49,8 @@ public class TelegramSending implements LongPollingSingleThreadUpdateConsumer {
                 .document(file).build();
         try {
             telegramClient.execute(doc);
-            System.out.println("File has been sent to Telegram.");
+            System.out.println("File has been sent to Telegram.\nDeterminating this app.");
+            System.exit(0);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
