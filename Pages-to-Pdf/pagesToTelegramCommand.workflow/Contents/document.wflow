@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>520</string>
+	<key>AMApplicationVersion</key>
+	<string>2.10</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Запустить AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	-- Add your "start.command" path	tell application "Finder" to open ("/Users/macbook/Desktop/work/PagesToPdf/start.command" as POSIX file)end run</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>022B4BDB-8F1F-4075-9AFF-F18A957A2E87</string>
+				<key>Keywords</key>
+				<array>
+					<string>Запустить</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>5F383633-14C6-49BD-8AE5-34986E136F5B</string>
+				<key>UUID</key>
+				<string>75D067B6-62CF-4901-962A-00FFC806BD4D</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>348.250000:247.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.2.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>defaultLocation</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+					<key>granularity</key>
+					<dict/>
+					<key>multipleSelection</key>
+					<dict/>
+					<key>promptMessage</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Выбрать объект в Finder:</string>
+						</array>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Ask for Finder Items.action</string>
+				<key>ActionName</key>
+				<string>Запросить объекты Finder</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>defaultLocation</key>
+					<string>~/Documents/SUAI/4 course</string>
+					<key>granularity</key>
+					<integer>0</integer>
+					<key>multipleSelection</key>
+					<true/>
+					<key>promptMessage</key>
+					<string>Выбрать объект в Finder:</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.AskForFinderItems</string>
+				<key>CFBundleVersion</key>
+				<string>1.2.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAskForFinderItemsAction</string>
+				<key>IgnoresInput</key>
+				<true/>
+				<key>InputUUID</key>
+				<string>C50CF970-D89B-4730-8FFE-3D71EA0C3646</string>
+				<key>Keywords</key>
+				<array>
+					<string>Найти</string>
+					<string>Объект</string>
+					<string>Файл</string>
+					<string>Папка</string>
+					<string>Запрашивать</string>
+					<string>Выбрать</string>
+					<string>Запрашивать</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>752C71CB-7527-4E19-9615-7724A47EA1E0</string>
+				<key>UUID</key>
+				<string>CEBEB38D-8026-4F09-A4FE-6252E1CC194B</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>granularity</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>multipleSelection</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Desktop</string>
+						<key>name</key>
+						<string>defaultLocation</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string>Выбрать объект в Finder:</string>
+						<key>name</key>
+						<string>promptMessage</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>348.250000:398.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Запустить AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>use scripting additionson run {input, parameters}	set exportedFiles to {}		-- Add your "Results" folder path	set destinationFolder to "/Users/macbook/Desktop/work/PagesToPdf/Results/"		do shell script "mkdir -p " &amp; quoted form of destinationFolder		repeat with anItem in input		try			set exportedFilePath to my export_file(anItem, destinationFolder)			set end of exportedFiles to exportedFilePath		on error errmsg number errnbr			my error_handler(errnbr, errmsg)		end try	end repeat		return exportedFilesend runon export_file(afile, destinationFolder)		set thisFile to afile as alias as text	set exportPDF to (text 1 thru ((offset of ".pages" in thisFile) - 1) of thisFile as text) &amp; ".pdf"		tell application "Pages"		try			set myDoc to open afile			with timeout of 1800 seconds				export myDoc to file exportPDF as PDF with properties {image quality:Best}			end timeout			close myDoc saving no		on error errmsg number errnbr			my error_handler(errnbr, errmsg)		end try	end tell		-- Delay to end generate pdf file	delay 1		-- Export PDF file via mv command	do shell script "mv " &amp; quoted form of POSIX path of exportPDF &amp; " " &amp; quoted form of destinationFolder		-- New path of file	set posixExportPDF to POSIX path of (destinationFolder &amp; (do shell script "basename " &amp; quoted form of POSIX path of exportPDF))	return posixExportPDFend export_fileon error_handler(nbr, msg)	display alert "[ " &amp; nbr &amp; " ] " &amp; msg as critical giving up after 10end error_handler</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>A626038B-448F-4648-AFD9-1077BDFC8A05</string>
+				<key>Keywords</key>
+				<array>
+					<string>Запустить</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>1F340AE6-893D-4068-B409-74B5CAE1EDA6</string>
+				<key>ShowWhenRun</key>
+				<false/>
+				<key>UUID</key>
+				<string>51DAB87E-8544-401C-A609-0FE435D46CDF</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>348.250000:643.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>125A70D6-2235-4270-ADEC-394A4786C642</key>
+		<dict>
+			<key>from</key>
+			<string>CEBEB38D-8026-4F09-A4FE-6252E1CC194B - CEBEB38D-8026-4F09-A4FE-6252E1CC194B</string>
+			<key>to</key>
+			<string>51DAB87E-8544-401C-A609-0FE435D46CDF - 51DAB87E-8544-401C-A609-0FE435D46CDF</string>
+		</dict>
+		<key>57EB5846-2504-4F2E-BD35-C969DB846B25</key>
+		<dict>
+			<key>from</key>
+			<string>75D067B6-62CF-4901-962A-00FFC806BD4D - 75D067B6-62CF-4901-962A-00FFC806BD4D</string>
+			<key>to</key>
+			<string>CEBEB38D-8026-4F09-A4FE-6252E1CC194B - CEBEB38D-8026-4F09-A4FE-6252E1CC194B</string>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>CF2DE621-6BB2-4C61-82AB-CA34214A94D1</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Path</string>
+			<key>name</key>
+			<string>start</string>
+			<key>value</key>
+			<string>~/Desktop/work/PagesToPdf/start.command</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>2CE04793-253F-4983-BE87-F113BF5C1A44</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Path</string>
+			<key>name</key>
+			<string>jar</string>
+			<key>value</key>
+			<string>~/Desktop/work/PagesToPdf/Pdf-Telegram-Transfer-jar-with-dependencies.jar</string>
+		</dict>
+	</array>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.workflow</string>
+	</dict>
+</dict>
+</plist>

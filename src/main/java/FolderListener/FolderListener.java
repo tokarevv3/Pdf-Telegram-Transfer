@@ -15,6 +15,7 @@ public class FolderListener {
      */
     public static void folderListener(String path)  {
 
+
         Path dir = Path.of(path);
         try (WatchService watchService = FileSystems.getDefault().newWatchService()) {
             // Create folderListener on new files.
