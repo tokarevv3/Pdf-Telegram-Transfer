@@ -1,7 +1,7 @@
-import FolderListener.FolderListener;
 import Telegram.TelegramSending;
 import org.telegram.telegrambots.longpolling.TelegramBotsLongPollingApplication;
 import util.PropertiesUtil;
+import static FolderListener.FolderListener.folderListener;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +13,6 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        FolderListener.folderListener(PropertiesUtil.get("path"));
+        folderListener(PropertiesUtil.get("path"));
     }
 }
